@@ -1,0 +1,7 @@
+# robots.txt for Padma Vanguard Constructors
+# Website: https://www.padmavanguard.com
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.padmavanguard.com/sitemap.xml

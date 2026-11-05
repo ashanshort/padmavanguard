@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Padma Vanguard Constructors - Professional construction company in Mirpur, Dhaka, Bangladesh. Residential, commercial and civil construction."/>
+  <meta name="keywords" content="Padma Vanguard Constructors, construction company Dhaka, builder Bangladesh, civil construction Mirpur, contractor Dhaka"/>
+  <meta name="robots" content="index, follow"/>
+  <meta property="og:title" content="Padma Vanguard Constructors"/>
+  <meta property="og:description" content="Professional construction company in Mirpur, Dhaka, Bangladesh."/>
+  <meta property="og:url" content="https://www.padmavanguard.com"/>
+  <meta property="og:type" content="website"/>
+  <title>Padma Vanguard Constructors | Dhaka, Bangladesh</title>
+  <link rel="canonical" href="https://www.padmavanguard.com/"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Barlow:wght@700;800;900&display=swap" rel="stylesheet"/>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    :root{
+      --navy:#0b1d35;
+      --navy2:#132846;
+      --teal:#1a6b5a;
+      --teal2:#22896f;
+      --gold:#d4a017;
+      --light:#f0f4f8;
+      --white:#ffffff;
+      --text:#2c3e50;
+      --muted:#6b7a8d;
+    }
+    body{font-family:'Inter',sans-serif;font-size:14px;color:var(--text);background:#fff;line-height:1.6;}
+    a{text-decoration:none;color:inherit;}
+    ul{list-style:none;}
+    .container{max-width:1100px;margin:0 auto;padding:0 24px;}
+    img{max-width:100%;}
+
+    /* ── ANNOUNCE BAR ── */
+    .announce{background:var(--teal);color:rgba(255,255,255,0.9);text-align:center;font-size:12px;padding:7px 20px;letter-spacing:.3px;}
+    .announce a{color:#fff;text-decoration:underline;}
+
+    /* ── HEADER ── */
+    header{background:#fff;box-shadow:0 1px 0 #e2e8f0;}
+    .hdr{display:flex;align-items:center;justify-content:space-between;padding:12px 0;gap:20px;flex-wrap:wrap;}
+    .logo-wrap{display:flex;align-items:center;gap:0;}
+    .logo-wrap img{height:84px;width:auto;display:block;}
+    .hdr-contacts{display:flex;gap:28px;flex-wrap:wrap;}
+    .hdr-col{display:flex;align-items:center;gap:10px;}
+    .hdr-icon{width:36px;height:36px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0;}
+    .hdr-col-txt small{display:block;font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;font-weight:600;}
+    .hdr-col-txt strong{font-size:13px;color:var(--navy);font-weight:700;}
+
+    /* ── NAV ── */
+    nav{background:var(--navy);position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.18);}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;}
+    nav ul{display:flex;}
+    nav ul li a{display:block;padding:14px 18px;color:rgba(255,255,255,.78);font-size:12.5px;font-weight:600;text-transform:uppercase;letter-spacing:.6px;transition:all .2s;border-bottom:3px solid transparent;}
+    nav ul li a:hover,nav ul li a.active{color:#fff;border-bottom-color:var(--gold);background:rgba(255,255,255,.04);}
+    .nav-cta{background:var(--teal);color:#fff !important;padding:14px 22px !important;border-bottom:3px solid transparent !important;}
+    .nav-cta:hover{background:var(--teal2) !important;}
+
+    /* ── HERO ── */
+    .hero{background:var(--navy);min-height:520px;display:flex;align-items:center;position:relative;overflow:hidden;}
+    .hero-bg-shapes{position:absolute;inset:0;pointer-events:none;}
+    .shape1{position:absolute;right:-80px;top:-80px;width:500px;height:500px;border-radius:50%;border:60px solid rgba(26,107,90,.18);}
+    .shape2{position:absolute;right:120px;bottom:-120px;width:320px;height:320px;border-radius:50%;border:40px solid rgba(212,160,23,.10);}
+    .shape3{position:absolute;left:-60px;bottom:-60px;width:280px;height:280px;border-radius:50%;background:rgba(26,107,90,.06);}
+    .hero .container{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding:70px 24px;}
+    .hero-left{}
+    .hero-pill{display:inline-flex;align-items:center;gap:8px;background:rgba(26,107,90,.25);border:1px solid rgba(26,107,90,.5);color:#6ee7c7;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:5px 14px;border-radius:20px;margin-bottom:20px;}
+    .hero-pill span{width:6px;height:6px;border-radius:50%;background:#6ee7c7;display:inline-block;}
+    .hero h1{font-family:'Barlow',sans-serif;font-size:46px;font-weight:900;color:#fff;line-height:1.1;margin-bottom:16px;}
+    .hero h1 em{color:var(--gold);font-style:normal;}
+    .hero-sub{color:rgba(255,255,255,.62);font-size:15px;line-height:1.75;margin-bottom:30px;max-width:440px;}
+    .hero-btns{display:flex;gap:12px;flex-wrap:wrap;}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 26px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;border:none;cursor:pointer;transition:all .2s;font-family:'Inter',sans-serif;}
+    .btn-teal{background:var(--teal);color:#fff;}
+    .btn-teal:hover{background:var(--teal2);transform:translateY(-1px);}
+    .btn-outline{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.35);}
+    .btn-outline:hover{border-color:#fff;background:rgba(255,255,255,.07);}
+    .hero-right{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+    .h-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.10);border-radius:4px;padding:22px 18px;text-align:center;transition:.2s;}
+    .h-card:hover{background:rgba(255,255,255,.10);border-color:rgba(212,160,23,.4);}
+    .h-card .ico{font-size:32px;margin-bottom:10px;}
+    .h-card .num{font-family:'Barlow',sans-serif;font-size:34px;font-weight:900;color:#fff;line-height:1;}
+    .h-card .lbl{font-size:11px;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:1px;margin-top:4px;}
+    .h-card.accent{background:var(--teal);border-color:var(--teal2);}
+
+    /* ── SECTION ── */
+    section{padding:70px 0;}
+    .sh{text-align:center;margin-bottom:50px;}
+    .sh-eyebrow{display:inline-block;background:var(--teal);color:#fff;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:4px 16px;border-radius:2px;margin-bottom:12px;}
+    .sh h2{font-family:'Barlow',sans-serif;font-size:36px;font-weight:800;color:var(--navy);line-height:1.15;}
+    .sh p{font-size:14px;color:var(--muted);max-width:520px;margin:10px auto 0;line-height:1.75;}
+    .sh-line{width:48px;height:4px;background:var(--gold);margin:14px auto 0;border-radius:2px;}
+
+    /* ── ABOUT ── */
+    .about{background:var(--light);}
+    .ab-wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+    .ab-visual{position:relative;}
+    .ab-main{height:340px;background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 60%,var(--teal) 100%);display:flex;align-items:center;justify-content:center;font-size:80px;border-radius:4px 4px 4px 40px;}
+    .ab-float{position:absolute;bottom:-20px;right:-20px;background:var(--gold);color:#fff;padding:20px 24px;text-align:center;border-radius:2px;}
+    .ab-float .bn{font-family:'Barlow',sans-serif;font-size:38px;font-weight:900;line-height:1;}
+    .ab-float .bl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;}
+    .ab-content{}
+    .ab-content h3{font-family:'Barlow',sans-serif;font-size:28px;font-weight:800;color:var(--navy);margin-bottom:14px;line-height:1.2;}
+    .ab-content p{font-size:13.5px;color:#4a5568;line-height:1.80;margin-bottom:14px;}
+    .ab-list{margin:18px 0;}
+    .ab-list li{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid #dde3ea;font-size:13px;color:#4a5568;}
+    .ab-list li span.dot{width:8px;height:8px;border-radius:50%;background:var(--teal);flex-shrink:0;}
+
+    /* ── SERVICES ── */
+    .services{background:#fff;}
+    .srv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+    .srv{border:1px solid #e2e8f0;border-radius:4px;padding:30px 24px;text-align:center;transition:all .25s;position:relative;overflow:hidden;}
+    .srv::before{content:'';position:absolute;bottom:0;left:0;width:100%;height:3px;background:var(--teal);transform:scaleX(0);transition:.25s;}
+    .srv:hover{box-shadow:0 8px 28px rgba(0,0,0,.09);transform:translateY(-4px);border-color:transparent;}
+    .srv:hover::before{transform:scaleX(1);}
+    .srv-ico{width:60px;height:60px;border-radius:50%;background:var(--light);display:flex;align-items:center;justify-content:center;font-size:26px;margin:0 auto 16px;}
+    .srv h4{font-family:'Barlow',sans-serif;font-size:16px;font-weight:800;color:var(--navy);margin-bottom:8px;}
+    .srv p{font-size:12.5px;color:var(--muted);line-height:1.65;}
+
+    /* ── PROJECTS ── */
+    .projects{background:var(--light);}
+    .prj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+    .prj{background:#fff;border-radius:4px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.07);transition:.25s;}
+    .prj:hover{box-shadow:0 10px 30px rgba(0,0,0,.12);transform:translateY(-3px);}
+    .prj-img{height:170px;display:flex;align-items:center;justify-content:center;font-size:54px;position:relative;}
+    .prj-badge{position:absolute;top:12px;left:12px;font-size:10px;font-weight:700;text-transform:uppercase;padding:3px 10px;border-radius:12px;letter-spacing:.8px;}
+    .done{background:#10b981;color:#fff;}
+    .ongoing{background:var(--gold);color:#fff;}
+    .g1{background:linear-gradient(135deg,#0b1d35,#1a3a6e);}
+    .g2{background:linear-gradient(135deg,#0d2b1a,#1a6b3a);}
+    .g3{background:linear-gradient(135deg,#2b1a0d,#6b3a1a);}
+    .g4{background:linear-gradient(135deg,#1a0d2b,#3a1a6b);}
+    .g5{background:linear-gradient(135deg,#0d2b2b,#1a6b6b);}
+    .g6{background:linear-gradient(135deg,#2b2b0d,#6b6b1a);}
+    .prj-body{padding:16px 18px;}
+    .prj-body h4{font-family:'Barlow',sans-serif;font-size:14px;font-weight:800;color:var(--navy);margin-bottom:4px;}
+    .prj-body .cat{font-size:11px;color:var(--teal);font-weight:700;text-transform:uppercase;letter-spacing:.8px;}
+    .prj-body p{font-size:12px;color:var(--muted);margin-top:6px;line-height:1.6;}
+
+    /* ── WHY ── */
+    .why{background:var(--navy);padding:70px 0;}
+    .why .sh h2{color:#fff;}
+    .why .sh p{color:rgba(255,255,255,.50);}
+    .why .sh-eyebrow{background:var(--gold);}
+    .why .sh-line{background:var(--gold);}
+    .why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+    .wy{display:flex;gap:18px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:4px;padding:24px 20px;transition:.2s;}
+    .wy:hover{background:rgba(255,255,255,.07);border-color:rgba(212,160,23,.35);}
+    .wy-num{font-family:'Barlow',sans-serif;font-size:42px;font-weight:900;color:rgba(212,160,23,.20);line-height:1;flex-shrink:0;width:50px;}
+    .wy-txt h4{font-size:14px;font-weight:700;color:#f0c070;margin-bottom:7px;}
+    .wy-txt p{font-size:12.5px;color:rgba(255,255,255,.52);line-height:1.65;}
+
+    /* ── TESTIMONIALS ── */
+    .testi{background:#fff;}
+    .ts-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+    .ts{background:var(--light);border-radius:4px;padding:28px 24px;position:relative;border-left:4px solid var(--teal);}
+    .ts-stars{color:var(--gold);font-size:14px;margin-bottom:10px;letter-spacing:2px;}
+    .ts p{font-size:13px;color:#4a5568;line-height:1.75;font-style:italic;margin-bottom:18px;}
+    .ts-auth{display:flex;align-items:center;gap:12px;}
+    .ts-av{width:42px;height:42px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Barlow',sans-serif;font-size:18px;font-weight:800;flex-shrink:0;}
+    .ts-auth h5{font-size:13px;font-weight:700;color:var(--navy);}
+    .ts-auth small{font-size:11px;color:var(--muted);}
+
+    /* ── CONTACT ── */
+    .contact{background:var(--light);}
+    .con-wrap{display:grid;grid-template-columns:1fr 1.3fr;gap:50px;}
+    .con-left h3{font-family:'Barlow',sans-serif;font-size:26px;font-weight:800;color:var(--navy);margin-bottom:12px;}
+    .con-left>p{font-size:13.5px;color:#4a5568;line-height:1.75;margin-bottom:24px;}
+    .con-item{display:flex;gap:14px;margin-bottom:16px;align-items:flex-start;}
+    .con-ic{width:42px;height:42px;background:var(--navy);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;color:#fff;flex-shrink:0;}
+    .con-item-txt strong{display:block;font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:2px;}
+    .con-item-txt span{font-size:13px;color:var(--text);}
+    .con-right{background:#fff;border-radius:4px;padding:34px 30px;box-shadow:0 2px 16px rgba(0,0,0,.07);}
+    .con-right h3{font-family:'Barlow',sans-serif;font-size:22px;font-weight:800;color:var(--navy);margin-bottom:20px;}
+    .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;}
+    .fg{margin-bottom:14px;}
+    .fg input,.fg textarea,.fg select{width:100%;padding:11px 14px;border:1px solid #dce2ea;font-family:'Inter',sans-serif;font-size:13px;color:var(--text);outline:none;background:#fff;border-radius:3px;transition:border .2s;}
+    .fg input:focus,.fg textarea:focus,.fg select:focus{border-color:var(--teal);}
+    .fg textarea{height:110px;resize:vertical;}
+    .btn-sub{background:var(--navy);color:#fff;border:none;padding:12px 32px;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1px;cursor:pointer;border-radius:3px;transition:.2s;width:100%;}
+    .btn-sub:hover{background:var(--teal);}
+
+    /* ── FOOTER ── */
+    footer{background:#07111f;color:rgba(255,255,255,.50);}
+    .foot-top{padding:52px 0 32px;}
+    .foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.6fr;gap:36px;}
+    .fc h4{font-family:'Barlow',sans-serif;font-size:14px;font-weight:800;color:#fff;margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid var(--gold);display:inline-block;}
+    .fc p{font-size:12px;line-height:1.80;}
+    .fc ul li{padding:5px 0;border-bottom:1px solid rgba(255,255,255,.05);}
+    .fc ul li a{font-size:12px;color:rgba(255,255,255,.50);transition:.15s;}
+    .fc ul li a:hover{color:var(--gold);padding-left:5px;}
+    .fc-con li{font-size:12px;padding:6px 0;border:none !important;display:flex;gap:8px;align-items:flex-start;}
+    .foot-bot{background:#040c16;padding:14px 0;text-align:center;font-size:12px;color:rgba(255,255,255,.26);border-top:1px solid rgba(255,255,255,.06);}
+    .foot-bot a{color:var(--gold);}
+
+    /* ── RESPONSIVE ── */
+    @media(max-width:950px){
+      .hero .container{grid-template-columns:1fr;}
+      .hero-right{grid-template-columns:repeat(4,1fr);}
+      .ab-wrap,.con-wrap{grid-template-columns:1fr;}
+      .srv-grid,.prj-grid{grid-template-columns:1fr 1fr;}
+      .ts-grid{grid-template-columns:1fr 1fr;}
+      .foot-grid{grid-template-columns:1fr 1fr;}
+      .why-grid{grid-template-columns:1fr;}
+    }
+    @media(max-width:600px){
+      .hero h1{font-size:30px;}
+      .hero-right{grid-template-columns:1fr 1fr;}
+      nav ul{flex-wrap:wrap;}
+      nav ul li a{padding:11px 13px;font-size:11px;}
+      .srv-grid,.prj-grid,.ts-grid,.foot-grid{grid-template-columns:1fr;}
+      .row2{grid-template-columns:1fr;}
+      .hdr-contacts{flex-direction:column;gap:10px;}
+    }
+  </style>
+</head>
+<body>
+
+<!-- ANNOUNCE BAR -->
+<div class="announce">
+  Free site visit &amp; consultation available — Call us: <strong>0181757683</strong> &nbsp;|&nbsp; <a href="mailto:support@padmavanguard.com">support@padmavanguard.com</a>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="container">
+    <div class="hdr">
+      <div class="logo-wrap">
+        <img src="data:image/png;base64,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" alt="Padma Vanguard Constructors Logo" />
+      </div>
+      <div class="hdr-contacts">
+        <div class="hdr-col">
+          <div class="hdr-icon">📍</div>
+          <div class="hdr-col-txt">
+            <small>Office Address</small>
+            <strong>Senpara Parbata, Sec #10, Mirpur, Dhaka 1216</strong>
+          </div>
+        </div>
+        <div class="hdr-col">
+          <div class="hdr-icon">📞</div>
+          <div class="hdr-col-txt">
+            <small>Call Us</small>
+            <strong>0181757683 | 0171137647</strong>
+          </div>
+        </div>
+        <div class="hdr-col">
+          <div class="hdr-icon">📧</div>
+          <div class="hdr-col-txt">
+            <small>Email Us</small>
+            <strong>support@padmavanguard.com</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- NAV -->
+<nav>
+  <div class="container">
+    <div class="nav-inner">
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-bg-shapes">
+    <div class="shape1"></div>
+    <div class="shape2"></div>
+    <div class="shape3"></div>
+  </div>
+  <div class="container">
+    <div class="hero-left">
+      <div class="hero-pill"><span></span>Trusted Since 2012</div>
+      <h1>Building <em>Quality</em><br/>Structures Across<br/>Bangladesh</h1>
+      <p class="hero-sub">Padma Vanguard Constructors delivers residential, commercial, and industrial construction projects in Dhaka — built on time, within budget, and to the highest quality standards.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-teal">View Our Projects</a>
+        <a href="#contact" class="btn btn-outline">Free Consultation</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="h-card accent">
+        <div class="ico">🏗️</div>
+        <div class="num">200+</div>
+        <div class="lbl">Projects Done</div>
+      </div>
+      <div class="h-card">
+        <div class="ico">😊</div>
+        <div class="num">300+</div>
+        <div class="lbl">Happy Clients</div>
+      </div>
+      <div class="h-card">
+        <div class="ico">📅</div>
+        <div class="num">12+</div>
+        <div class="lbl">Years Active</div>
+      </div>
+      <div class="h-card">
+        <div class="ico">👷</div>
+        <div class="num">30+</div>
+        <div class="lbl">Engineers</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="container">
+    <div class="ab-wrap">
+      <div class="ab-visual">
+        <div class="ab-main">🏢</div>
+        <div class="ab-float">
+          <div class="bn">12+</div>
+          <div class="bl">Years of<br/>Trust</div>
+        </div>
+      </div>
+      <div class="ab-content">
+        <div class="sh" style="text-align:left;margin-bottom:20px;">
+          <span class="sh-eyebrow">About Us</span>
+          <h2 style="font-size:30px;">Who We Are</h2>
+          <div class="sh-line" style="margin-left:0;"></div>
+        </div>
+        <p>Padma Vanguard Constructors is a fully licensed construction and civil engineering firm headquartered in Mirpur, Dhaka. Since 2012, we have been building quality structures for residential, commercial, and industrial clients across Bangladesh.</p>
+        <p>Our team of BUET-trained engineers, site managers, and skilled workers follow Bangladesh National Building Code (BNBC) standards on every project — with zero compromise on safety or quality.</p>
+        <ul class="ab-list">
+          <li><span class="dot"></span> Residential building construction</li>
+          <li><span class="dot"></span> Commercial &amp; office buildings</li>
+          <li><span class="dot"></span> Industrial &amp; factory construction</li>
+          <li><span class="dot"></span> Renovation &amp; interior finishing</li>
+          <li><span class="dot"></span> Road &amp; civil infrastructure</li>
+          <li><span class="dot"></span> Project management &amp; supervision</li>
+        </ul>
+        <a href="#contact" class="btn btn-teal" style="margin-top:20px;">Talk to Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services">
+  <div class="container">
+    <div class="sh">
+      <span class="sh-eyebrow">Our Services</span>
+      <h2>What We Build</h2>
+      <div class="sh-line"></div>
+      <p>End-to-end construction services from planning and design to final handover — all under one roof.</p>
+    </div>
+    <div class="srv-grid">
+      <div class="srv"><div class="srv-ico">🏘️</div><h4>Residential Construction</h4><p>Apartments, houses, and multi-storey buildings built with grade-A materials and strict BNBC compliance.</p></div>
+      <div class="srv"><div class="srv-ico">🏢</div><h4>Commercial Buildings</h4><p>Office towers, shopping complexes, and mixed-use buildings optimized for long-term ROI.</p></div>
+      <div class="srv"><div class="srv-ico">🏭</div><h4>Industrial Projects</h4><p>Factory buildings, warehouses, and RCC structures for industrial clients across Bangladesh.</p></div>
+      <div class="srv"><div class="srv-ico">🔧</div><h4>Renovation &amp; Fit-out</h4><p>Full structural renovation, interior fit-out, and upgrading of existing commercial and residential properties.</p></div>
+      <div class="srv"><div class="srv-ico">🛣️</div><h4>Road &amp; Civil Works</h4><p>Road paving, drainage, boundary walls, and civil infrastructure for private and public sector clients.</p></div>
+      <div class="srv"><div class="srv-ico">📐</div><h4>Design &amp; Supervision</h4><p>Architectural and structural design, drawing approvals, and full on-site construction supervision.</p></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="sh">
+      <span class="sh-eyebrow">Contact Us</span>
+      <h2>Let's Start Your Project</h2>
+      <div class="sh-line"></div>
+      <p>Reach out for a free site visit and project consultation. We respond within 24 hours.</p>
+    </div>
+    <div class="con-wrap">
+      <div class="con-left">
+        <h3>Our Office</h3>
+        <p>Our team is available Saturday to Thursday, 9am to 6pm. Walk-ins are welcome at our Mirpur office.</p>
+        <div class="con-item">
+          <div class="con-ic">📍</div>
+          <div class="con-item-txt"><strong>Office Address</strong><span>Senpara Parbata, Section #10<br>Mirpur, Dhaka 1216, Bangladesh</span></div>
+        </div>
+        <div class="con-item">
+          <div class="con-ic">📞</div>
+          <div class="con-item-txt"><strong>Phone</strong><span>0181757683<br>0171137647</span></div>
+        </div>
+        <div class="con-item">
+          <div class="con-ic">📧</div>
+          <div class="con-item-txt"><strong>Email</strong><span>support@padmavanguard.com<br>info@padmavanguard.com</span></div>
+        </div>
+        <div class="con-item">
+          <div class="con-ic">🌐</div>
+          <div class="con-item-txt"><strong>Website</strong><span>www.padmavanguard.com</span></div>
+        </div>
+      </div>
+      <div class="con-right">
+        <h3>Send a Message</h3>
+        <div class="row2">
+          <div class="fg"><input type="text" placeholder="Your Full Name"/></div>
+          <div class="fg"><input type="tel" placeholder="Phone Number"/></div>
+        </div>
+        <div class="fg"><input type="email" placeholder="Email Address"/></div>
+        <div class="fg">
+          <select>
+            <option value="">— Select Project Type —</option>
+            <option>Residential Building</option>
+            <option>Commercial Building</option>
+            <option>Industrial / Factory</option>
+            <option>Renovation / Fit-out</option>
+            <option>Road &amp; Civil Works</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="fg"><textarea placeholder="Tell us about your project..."></textarea></div>
+        <button class="btn-sub">Send Message →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-top">
+    <div class="container">
+      <div class="foot-grid">
+        <div class="fc">
+          <h4>Padma Vanguard</h4>
+          <p>Padma Vanguard Constructors is a trusted construction company in Mirpur, Dhaka — delivering quality residential, commercial, and industrial projects across Bangladesh since 2012.</p>
+        </div>
+        <div class="fc">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="fc">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Residential Construction</a></li>
+            <li><a href="#services">Commercial Buildings</a></li>
+            <li><a href="#services">Industrial Projects</a></li>
+            <li><a href="#services">Renovation Works</a></li>
+            <li><a href="#services">Road &amp; Civil Works</a></li>
+          </ul>
+        </div>
+        <div class="fc">
+          <h4>Contact Info</h4>
+          <ul class="fc-con">
+            <li>📍 Senpara Parbata, Sec #10, Mirpur, Dhaka 1216</li>
+            <li>📞 0181757683</li>
+            <li>📞 0171137647</li>
+            <li>✉ support@padmavanguard.com</li>
+            <li>✉ info@padmavanguard.com</li>
+            <li>🌐 www.padmavanguard.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="foot-bot">
+    <div class="container">
+      &copy; 2024 Padma Vanguard Constructors. All Rights Reserved. &nbsp;|&nbsp;
+      <a href="https://www.padmavanguard.com">padmavanguard.com</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click',function(e){
+      const t=document.querySelector(this.getAttribute('href'));
+      if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}
+    });
+  });
+  window.addEventListener('scroll',()=>{
+    const ls=document.querySelectorAll('nav a');
+    document.querySelectorAll('section[id]').forEach(s=>{
+      if(window.scrollY>=s.offsetTop-100){
+        ls.forEach(l=>l.classList.remove('active'));
+        const a=document.querySelector('nav a[href="#'+s.id+'"]');
+        if(a)a.classList.add('active');
+      }
+    });
+  });
+  document.querySelector('.btn-sub').addEventListener('click',()=>{
+    alert('Thank you! We will contact you within 24 hours.\n\nUrgent? Call: 0181757683');
+  });
+</script>
+</body>
+</html>
